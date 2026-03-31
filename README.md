@@ -45,7 +45,7 @@ src/
 ## Instalacion y ejecucion
 
 Clona el repositorio:
-git clone https://github.com/diertich86/OPI-Tech.git
+git clone https://github.com/diertich86/opi-tech.git
 
 Instala dependencias:
 npm install
