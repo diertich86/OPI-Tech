@@ -1,10 +1,10 @@
-# OpoTech Product Dashboard
+# OpiTech Product Dashboard
 
-Dashboard de productos para e-commerce construido con Vue 3, TypeScript y arquitectura escalable.
+Dashboard de productos para e-commerce construido con Vue, TypeScript y arquitectura escalable.
 
 ## Stack Tecnologico
 
-- Vue 3
+- Vue
 - TypeScript
 - Vite
 - Vue Router
@@ -21,7 +21,7 @@ Dashboard de productos para e-commerce construido con Vue 3, TypeScript y arquit
 - Vista de detalle de producto
 - Estados visuales: loading skeletons, empty state y error state
 - Lazy loading de imagenes
-- Layout responsive (mobile-first)
+- Layout responsive
 
 ## Estructura del Proyecto
 
@@ -42,63 +42,19 @@ src/
 - Node.js LTS (recomendado v20+)
 - npm v10+
 
-## Instalacion y ejecucion (Windows / PowerShell)
+## Instalacion y ejecucion
 
-1. Ir al directorio del proyecto:
+Clona el repositorio:
+git clone https://github.com/diertich86/OPI-Tech.git
 
-```powershell
-cd "D:\Pruebas- trabajo\OpoTech\e-commerce"
-```
-
-2. Instalar dependencias:
-
-```powershell
+Instala dependencias:
 npm install
-```
 
-3. Levantar entorno de desarrollo:
-
-```powershell
+Ejecuta el proyecto:
 npm run dev
-```
-
-4. Abrir en navegador la URL mostrada por Vite (normalmente `http://localhost:5173`).
-
-## Scripts disponibles
-
-- `npm run dev`: inicia servidor de desarrollo
-- `npm run build`: compila para produccion
-- `npm run preview`: previsualiza build de produccion
-
-## Decisiones de Arquitectura
-
-- **Separacion de responsabilidades**
-  - `services`: llamadas HTTP aisladas
-  - `stores`: estado global, filtros, paginacion y manejo de errores
-  - `composables`: logica de presentacion reutilizable
-  - `components`: UI desacoplada y reusable
-
-- **Escalabilidad**
-  - Tipado fuerte con interfaces en `types`
-  - Alias `@` para imports limpios
-  - Rutas con lazy loading para vistas
-
-- **UX**
-  - Feedback visual claro durante carga y errores
-  - Busqueda con debounce para evitar renderizados innecesarios
-  - Cards con transiciones sutiles y jerarquia visual consistente
 
 ## API utilizada
 
 - Productos: `GET https://fakestoreapi.com/products`
 - Categorias: `GET https://fakestoreapi.com/products/categories`
 - Detalle: `GET https://fakestoreapi.com/products/:id`
-
-## Posibles mejoras futuras
-
-- Persistencia de filtros y pagina en query params
-- Ordenamiento por precio/rating
-- Testing unitario y de componentes (Vitest + Vue Test Utils)
-- Internacionalizacion (i18n)
-- Modo claro/oscuro
-
